@@ -15,5 +15,13 @@
     <name>springboot-dubbo-customer</name>
     <description>Demo project for Spring Boot</description>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.dubbo.deml</groupId>
+            <artifactId>springboot-dubbo-common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
 
 </project>
