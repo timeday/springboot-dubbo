@@ -6,14 +6,13 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.0.0.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
     <groupId>com.dubbo.demo</groupId>
     <artifactId>springboot-dubbo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>springboot-dubbo</name>
-    <description>Demo project for Spring Boot</description>
+    <packaging>pom</packaging>
 
     <modules>
         <module>springboot-dubbo-api</module>

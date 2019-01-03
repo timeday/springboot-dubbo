@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dubbo.demo.springbootdubboprovider.dao.UserDao">
+
+    <select id="findListUser" resultType="com.dubbo.demo.springbootdubboapi.enetity.User">
+        select * from user;
+    </select>
+
+</mapper>

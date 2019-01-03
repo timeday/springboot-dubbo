@@ -12,7 +12,6 @@
     <groupId>com.dubbo.demo</groupId>
     <artifactId>springboot-dubbo-api</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>springboot-dubbo-api</name>
-    <description>Demo project for Spring Boot</description>
+
 
 </project>

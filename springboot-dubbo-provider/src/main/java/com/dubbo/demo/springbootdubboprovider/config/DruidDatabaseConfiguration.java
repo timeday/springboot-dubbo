@@ -3,7 +3,7 @@ package com.dubbo.demo.springbootdubboprovider.config;
 import com.alibaba.druid.pool.DruidDataSource;
 import com.alibaba.druid.support.http.StatViewServlet;
 import com.alibaba.druid.support.http.WebStatFilter;
-import com.dubbo.deml.springbootdubbocommon.utils.AesUtils;
+import com.dubbo.demo.springbootdubbocommon.utils.AesUtils;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.springframework.beans.factory.annotation.Value;
@@ -85,6 +85,11 @@ public class DruidDatabaseConfiguration {
         return datasource;
     }
 
+    /**
+     * 事务
+     * @return
+     * @throws SQLException
+     */
     @Bean
     public DataSourceTransactionManager transactionManager() throws SQLException {
         return new DataSourceTransactionManager(dataSource());

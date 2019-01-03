@@ -1,4 +1,4 @@
-package com.dubbo.deml.springbootdubbocommon.utils;
+package com.dubbo.demo.springbootdubbocommon.utils;
 
 import javax.crypto.Cipher;
 import javax.crypto.spec.IvParameterSpec;

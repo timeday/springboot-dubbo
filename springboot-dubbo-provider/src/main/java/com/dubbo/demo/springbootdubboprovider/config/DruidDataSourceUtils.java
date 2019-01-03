@@ -1,7 +1,7 @@
 package com.dubbo.demo.springbootdubboprovider.config;
 
 import com.alibaba.druid.pool.DruidDataSource;
-import com.dubbo.deml.springbootdubbocommon.utils.AesUtils;
+import com.dubbo.demo.springbootdubbocommon.utils.AesUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
