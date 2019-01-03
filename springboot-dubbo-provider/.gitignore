@@ -23,7 +23,3 @@
 /dist/
 /nbdist/
 /.nb-gradle/
-/springboot-dubbo-api/.mvn/
-/springboot-dubbo-common/.mvn/
-/springboot-dubbo-customer/.mvn/
-/springboot-dubbo-provider/.mvn/

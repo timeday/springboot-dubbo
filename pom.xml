@@ -8,15 +8,40 @@
         <version>2.1.1.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
+
     <groupId>com.dubbo.demo</groupId>
     <artifactId>springboot-dubbo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>springboot-dubbo</name>
     <description>Demo project for Spring Boot</description>
 
+    <modules>
+        <module>springboot-dubbo-api</module>
+        <module>springboot-dubbo-common</module>
+        <module>springboot-dubbo-provider</module>
+        <module>springboot-dubbo-customer</module>
+    </modules>
+
     <properties>
         <java.version>1.8</java.version>
         <spring-cloud.version>Greenwich.RC2</spring-cloud.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+        <zkClient.version>0.10</zkClient.version>
+        <zookeeper.version>3.4.12</zookeeper.version>
+        <dubbo.starter.version>0.2.0</dubbo.starter.version>
+        <swagger2.version>2.9.2 </swagger2.version>
+        <dubbo.api.version>0.0.1-SNAPSHOT</dubbo.api.version>
+        <mysql.connector.version>8.0.11</mysql.connector.version>
+        <alibaba.druid.version>1.0.13</alibaba.druid.version>
+        <lombok.version>1.16.20</lombok.version>
+        <tkMapper.version>2.0.3</tkMapper.version>
+        <pageHelper.version>1.2.5</pageHelper.version>
+        <aop.version>1.8.13</aop.version>
+        <beanutils.version>1.9.3</beanutils.version>
+        <log4j.version>1.2.17</log4j.version>
+        <spring.beans.version>5.0.8.RELEASE</spring.beans.version>
     </properties>
 
     <dependencies>
@@ -47,6 +72,61 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>commons-beanutils</groupId>
+            <artifactId>commons-beanutils</artifactId>
+            <version>${beanutils.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjrt</artifactId>
+            <version>${aop.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>${alibaba.druid.version}</version>
+        </dependency>
+        <!-- springfox-swagger2 -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>${swagger2.version}</version>
+        </dependency>
+        <!-- springfox-swagger2-ui -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>${swagger2.version}</version>
+        </dependency>
+
+        <!--dubbo config-->
+        <dependency>
+            <groupId>com.alibaba.boot</groupId>
+            <artifactId>dubbo-spring-boot-starter</artifactId>
+            <version>${dubbo.starter.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.101tec</groupId>
+            <artifactId>zkclient</artifactId>
+            <version>${zkClient.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.zookeeper</groupId>
+            <artifactId>zookeeper</artifactId>
+            <version>${zookeeper.version}</version>
+        </dependency>
+        <!--log-->
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>${log4j.version}</version>
         </dependency>
     </dependencies>
 
