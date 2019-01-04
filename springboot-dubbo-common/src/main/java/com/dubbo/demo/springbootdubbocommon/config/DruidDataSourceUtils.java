@@ -1,4 +1,4 @@
-package com.dubbo.demo.springbootdubboprovider.config;
+package com.dubbo.demo.springbootdubbocommon.config;
 
 import com.alibaba.druid.pool.DruidDataSource;
 import com.dubbo.demo.springbootdubbocommon.utils.AesUtils;

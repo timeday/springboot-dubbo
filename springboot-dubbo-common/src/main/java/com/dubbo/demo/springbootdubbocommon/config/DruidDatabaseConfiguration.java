@@ -1,4 +1,4 @@
-package com.dubbo.demo.springbootdubboprovider.config;
+package com.dubbo.demo.springbootdubbocommon.config;
 
 import com.alibaba.druid.pool.DruidDataSource;
 import com.alibaba.druid.support.http.StatViewServlet;
@@ -100,7 +100,7 @@ public class DruidDatabaseConfiguration {
         final SqlSessionFactoryBean sessionFactory = new SqlSessionFactoryBean();
         PathMatchingResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
         sessionFactory.setDataSource(dataSource);
-        sessionFactory.setMapperLocations(resolver.getResources("classpath:mapper/*.xml"));
+        sessionFactory.setMapperLocations(resolver.getResources("classpath:mapping/*.xml"));
         return sessionFactory.getObject();
     }
 

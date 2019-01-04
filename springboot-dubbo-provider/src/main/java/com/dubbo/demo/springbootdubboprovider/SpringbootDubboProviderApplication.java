@@ -1,6 +1,7 @@
 package com.dubbo.demo.springbootdubboprovider;
 
 import com.alibaba.dubbo.config.spring.context.annotation.EnableDubbo;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.hystrix.EnableHystrix;
@@ -11,7 +12,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 //开启服务容错
 @EnableHystrix
 @SpringBootApplication
-//@MapperScan("com.dubbo.demo.springbootdubboprovider.dao")
+@MapperScan("com.dubbo.demo.springbootdubboprovider.dao")
 public class SpringbootDubboProviderApplication {
 
     public static void main(String[] args) {

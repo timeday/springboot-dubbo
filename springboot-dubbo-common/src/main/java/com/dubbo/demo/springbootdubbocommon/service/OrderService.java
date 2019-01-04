@@ -6,8 +6,6 @@ import java.util.List;
 
 
 public interface OrderService {
-
-
-	public List<User> initOrder(String userId);
+	 List<User> initOrder(String userId);
 
 }

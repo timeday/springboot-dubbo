@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.List;
 
-@Service(version = "1.0.0",interfaceClass = UserService.class)
+@Service(version = "1.0.0",interfaceClass = UserService.class,timeout=1000,retries = 2,validation = "true",stub="com.dubbo.demo.springbootdubbocommon.service.UserServiceStub")
 @Component
 public class UserServiceImpl implements UserService {
 

@@ -4,7 +4,7 @@ package com.dubbo.demo.springbootdubboapi.enetity;
 import lombok.Data;
 
 @Data
-public class LogInfo {
+public class LogInfo implements java.io.Serializable{
 
     private String id;
 

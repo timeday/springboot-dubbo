@@ -10,11 +10,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.validation.constraints.NotNull;
 import java.util.List;
 
 
 @RestController
-@Api(value = "/uac", tags = "订单用户")
+@Api(value = "/order", tags = "订单用户")
 public class OrderController {
 
 	@Autowired
@@ -23,7 +24,7 @@ public class OrderController {
 	@ApiOperation(value = "订单用户", notes = "订单用户")
 	@ResponseBody
 	@RequestMapping("/initOrder")
-	public List<User> initOrder(@RequestParam("uid")String userId) {
+	public List<User> initOrder(@NotNull @RequestParam("uid")String userId) {
 		return orderService.initOrder(userId);
 	}
 

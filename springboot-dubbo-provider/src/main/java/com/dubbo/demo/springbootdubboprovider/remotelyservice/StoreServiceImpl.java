@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.List;
 
-@Service(version = "1.0.0",interfaceClass = StoreService.class)
+@Service(version = "1.0.0",interfaceClass = StoreService.class,retries = 2)
 @Component
 public class StoreServiceImpl implements StoreService {
 
